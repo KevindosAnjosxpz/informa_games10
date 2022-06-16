@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>informa_games10</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta nome="viewport"   content="device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="plugins/magnific-popup.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+            <header id="cabecalho">
+                <img src="imagens/logo/logo.png" id="logo">
+                <nav id="menu">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li id="menu_xbox">
+                            <a href="#">Xbox</a>
+                            <ul  class="xbox">
+                                <li class="lanacamentos_lancamentos"><a href="internos/lancamentos_xbox.html" target="_self">Lançamentos</a></li><hr>
+                                <li><a href="internos/gratis_xbox.html" target="_self">Jogos gratís</a></li><hr>
+                                <li><a href="https://www.xbox.com" target="_blank">Site oficial</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu_playstation">
+                            <a href="#">Playstation</a>
+                            <ul class="playstation">
+                                <li class="lancamentos_play4"><a href="internos/lancamentos_play4.html" target="_self">Lançamentos</a></li><hr>
+                                <li class="gratis_play4"><a href="internos/gratis_play4.html" target="_self">Jogos gratís</a></li><hr>
+                                <li class="play5"><a href="internos/playstation5.html" target="_self">Playstation 5</a></li><hr>
+                                <li><a href="https://www.playstation.com" target="_blank">Site oficial</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu_nintendo">
+                             <a href="#">Nintendo Switch</a>
+                             <ul class="nintendo">
+                                <li class=""><a href="internos/lancamentos_nintendo.html" target="_self">Lançamentos</a></li><hr>
+                                <li><a href="internos/gratis_nintendo.html" target="_self">Jogos gratís</a></li><hr>
+                                <li><a href="https://www.nintendo.com" target="_blank">Site oficial</a></li>
+                             </ul> 
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+    
+            <main>
+                <section class="banners_container">
+                        <ul class="slider">
+                            <li><img src="imagens/banners/banners_01.png"></li>
+                            <li><img src="imagens/banners/banners_02.png"></li>
+                            <li><img src="imagens/banners/banners_03.png"></li>
+                        </ul>
+                </section>
+        
+                <section class ="conteudo">
+                    <div class="texto">
+                        <h1> Fala amante dos games, por aqui vocês poderam encontrar noticias, lançamentos, jogos grátis disponiveis da sua plataforma preferida como Xbox, Playstation4, Playstation5 e Nintendo.</h1> 
+                        <h1>Aqui temos um lugar até mesmo para você que não tem ideia do que jogar ou é um simples novato que acabou de ganhar seu primeiro console. Temos variedades de jogos para você escolher e se divertir tanto sozinho quanto com seus amigos!!! Então segue com a gente nessa aventura.</h1>
+                    </div>
+                    <div class="img">
+                    </div>
+                </section>
+            </main>
+    
+            <footer id="rodape">
+               <p>Site construido por Kevin dos Anjos</p><br> 
+                <p> Aluno do primeiro período de Sitema de Informação</p><br>
+            <p>UniRios - Centro Universitário do Rio São Francisco</p>
+            </footer>
+    </div>
+  <script src="plugins/jquery.min.js"></script>
+  <script src="plugins/jquery.bxslider.min.js"></script>
+  <script src="plugins/jquery.magnific-popup.js"></script>
+  <script src="script.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+      mode: 'horizontal',
+      captions: true,
+    // slidewidth: 600,
+      auto: true,
+      pager: true,
+    //speed: 100,
+    //controls: ture
+      })
+
+      $('#galeria-fotos').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		closeOnContentClick: false,
+		closeBtnInside: false,
+		mainClass: 'mfp-with-zoom mfp-img-mobile',
+		image: {
+			verticalFit: true,
+			titleSrc: function(item) {
+				return item.el.attr('title');
+			}
+		},
+		gallery: {
+			enabled: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300, // don't foget to change the duration also in CSS
+			opener: function(element) {
+				return element.find('img');
+			}
+		}
+		
+	});
+
+    }); 
+  </script>
+</body>
+</html>

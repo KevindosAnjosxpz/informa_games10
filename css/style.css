@@ -1,0 +1,1123 @@
+*{
+        margin: 0;
+        padding: 0;
+		box-sizing: border-box;
+		font-family: 'Lato', sans-serif;
+}
+
+
+
+/* Cabeçalho */
+
+#cabecalho{
+    background-image: linear-gradient(to right, green, #000, #ff0000);	
+	height: 180px;
+	display: flex;
+	font-family: 'Lato', sans-serif;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 9;
+}
+
+#cabecalho #logo{
+	display: block;
+	width:200px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+#cabecalho #menu{ 
+	background-color: #00000000;
+	justify-content: space-between;
+	text-align: center;
+}
+
+#cabecalho #menu li{
+	position: relative;
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 3px;
+	font-size: 1.3rem;
+}
+
+.xbox{
+	background-color: green;
+
+}
+
+.playstation{
+	background-color: #031360;
+}
+
+.play5{
+	background-color: #000;
+	width: 100%;
+}
+
+.nintendo{
+	background-color: red;
+}
+
+#cabecalho #menu .xbox{
+	display: none;
+	position: absolute;
+	width: 200%;
+	z-index: 9;
+}
+
+#cabecalho #menu .playstation{
+	display: none;
+	position: absolute;
+	width: 150%;
+	z-index: 9;
+}
+
+#cabecalho #menu .nintendo{
+	display: none;
+	position: absolute;
+	width: 100%;
+	z-index: 9;
+}
+
+#cabecalho #menu li a{
+	color: #FFF;
+	text-decoration: none;
+	padding: 20px;
+	display: block;
+	transition: all 0.3s linear;
+}
+
+/* Hover do Cabeçalho */
+
+#cabecalho #menu_xbox:hover ul.xbox{
+    display: block;
+}
+
+#cabecalho #menu_playstation:hover ul.playstation{
+    display: block;
+}
+
+#cabecalho #menu_nintendo:hover ul.nintendo{
+    display: block;
+}
+
+/* Hover do Sub menu na Nav */
+
+nav ul li ul li:hover{
+	opacity: 0.3;
+}
+
+/* Logos */
+
+ #logo_xbox{
+	display: block;
+	width:120px;
+	margin: 0 auto;
+}
+
+#logo_playstation{
+	filter: brightness(3);
+	display: block;
+	width: 400px;
+	margin: 0 auto;
+}
+
+#logo_playstation5{
+	filter: invert(1);
+	display: block;
+	width: 400px;
+	margin: 0 auto;
+	padding-bottom: 14.5px;
+}
+
+#logo_nintendo{
+	display: block;
+	width:120px;
+	margin: 0 auto;
+}
+
+/*Slider Carrossel*/
+
+.banners_container{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+/* Conteudo da página Inicio */
+
+.conteudo{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 1rem;
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+	height: auto;
+	max-width: 1300px;
+	color: #323232;
+	font-family: 'Lato', sans-serif;
+	/* text-align: justify; */
+	/* max-width: 800px; */
+}
+
+.texto{
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	gap: 20px;
+	width: 100%;
+	justify-content: center;
+}
+
+.texto h1{
+	font-size: 25px;
+}
+
+.img{
+	background-image: url(../imagens/fundo/fundo_01.jpg);
+	width: 100%;
+	justify-content: space-between;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 20%;
+}
+
+/* Rodapé */
+
+#rodape{
+	background-color: #000;
+	color: #FFF;
+	padding: 20px;
+	text-align: center;
+}
+
+/* página de lançamentos do xbox */
+
+#conteudo_xbox p{
+	color: #000;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+}
+
+#conteudo_xbox h1{
+	color: #000;
+	font-size: 50px;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+}
+
+/* Jogo 1 */
+
+#conteudo_xbox .somerville{
+	text-align: center;
+}
+
+#conteudo_xbox .somerville p{
+	padding: 20px;
+}
+
+#conteudo_xbox .somerville a{
+	text-decoration: none;
+	color: #031360;
+}
+
+/* Jogo 2 */
+
+#conteudo_xbox .ark2{
+	text-align: center;
+}
+
+#conteudo_xbox .ark2 p{
+	padding: 25px;
+}
+
+#conteudo_xbox .ark2 a{
+	text-decoration: none;
+	color: #031360;
+}
+
+/* Jogo 3 */
+
+.stalker2{
+	text-align: center;
+}
+
+.stalker2 h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.stalker2 p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+#conteudo_xbox .stalker2 a{
+	text-decoration: none;
+	color: #031360;
+}
+
+/* Jogo 4 */
+
+.starfield{
+	text-align: center;
+}
+
+.starfield h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.starfield p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+/* Jogo 5 */
+
+.forza2{
+	text-align: center;
+}
+
+.forza2 h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.forza2 p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/* Conteudo jogos grátis Xbox */
+
+/* Jogo 1 */
+
+#conteudo_xbox02{
+	color: #000;
+	font-family: 'Lato', sans-serif;
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.warzone h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.warzone p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_warzone{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/* Jogo 2 */
+
+.dauntless h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.dauntless p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_dauntless{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/* Jogo 3 */
+
+.destiny h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.destiny p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_destiny{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/* jogo 4 */
+
+.matrix h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.matrix p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_matrix{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/* jogo 5 */
+
+.warframer h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.warframer p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_warframer{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/* Conteudo Jogos Lançamentos play 4 */
+
+#play4{
+	color: #000;
+	font-family: 'Lato', sans-serif;
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+/* Jogo 1 */
+
+.eve h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.eve p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_eve{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/* Jogo 2 */
+
+.forspoken h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.forspoken p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_forspoken{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/* Jogo 3 */
+
+.gran h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.gran p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_gran{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/* Jogo 4 */
+
+.horizon h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.horizon p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_horizon{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/* Jogo 5 */
+
+.fifa23 h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.fifa23 p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_fifa23{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/* Conteudo Jogos Gratís playstation 4*/
+
+/* Jogo 1 */
+
+.dragon h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.dragon p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_dragon{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/* Jogo 2 */
+
+.roller h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.roller p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_roller{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/* Jogo 3 */
+
+.city h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.city p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_city{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/* Jogo 4 */
+
+.multi h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.multi p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_multi{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/* Jogo 5 */
+
+.sca h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.sca p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_sca{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+
+
+/* Conteudo Jogo Playstation 5 */
+
+#play5{
+	color: #000;
+	font-family: 'Lato', sans-serif;
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+/* Jogo 1 */
+
+.dokev h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.dokev p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_dokev{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;	
+}
+
+/* Jogo 2 */
+
+.astro h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.astro p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_astro{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;	
+}
+
+/* Jogo 3 */
+
+.ratchet h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.ratchet p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_ratchet{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;	
+}
+
+/* Jogo 4 */
+
+.forza h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.forza p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_forza2{
+	color: rgb(255, 0, 0);
+	text-decoration: none;
+}
+
+.trailer_forza{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;	
+}
+
+/* Jogo 5 */
+
+.god h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.god p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_god{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;	
+}
+
+/* Conteudo Jogos Lançamentos Nintendo */
+
+#conteudo_nintendo{
+	color: #000;
+	font-family: 'Lato', sans-serif;
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+/* Jogo 1 */
+
+.mario h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.mario p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_mario{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;	
+}
+
+/* Jogo 2 */
+
+.olli h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.olli p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_olli{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;	
+}
+
+/* Jogo 3 */
+
+.pokemon h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.pokemon p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_pokemon{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;	
+}
+
+/* Jogo 4 */
+
+.metroid h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.metroid p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_metroid{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;	
+}
+
+/* Jogo 5 */
+
+.gollum h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center
+}
+
+.gollum p{
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_gollum{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;	
+}
+
+/* Conteudo Jogos Grátis Nintendo */
+
+#conteudo_nintendo02{
+	color: #000;
+	font-family: 'Lato', sans-serif;
+	font-size: larger;
+	padding: 20px;
+	text-align: center;
+}
+
+/* Jogo 1 */
+
+.smite h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.smite p{
+	font-size: 'Lato', sans-serif;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_smite{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;	
+}
+
+/* Jogo 2 */
+
+.street h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.street p{
+	font-size: 'Lato', sans-serif;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_street{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;	
+}
+
+/* Jogo 3 */
+
+.vigor h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.vigor p{
+	font-size: 'Lato', sans-serif;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_vigor{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;	
+}
+
+/* Jogo 4 */
+
+.rocket h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.rocket p{
+	font-size: 'Lato', sans-serif;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_rocket{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;	
+}
+
+/* jogo 5 */
+
+.island h1{
+	font-family: 'Lato', sans-serif;
+	font-size: 50px;
+	text-align: center;
+}
+
+.island p{
+	font-size: 'Lato', sans-serif;
+	padding: 20px;
+	text-align: center;
+}
+
+.trailer_island{
+	display: block;
+	text-decoration: none;
+	color: #031360;
+	max-width: 300px;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;	
+}
