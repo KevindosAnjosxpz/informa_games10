@@ -162,8 +162,6 @@ nav ul li ul li:hover{
 	max-width: 1300px;
 	color: #323232;
 	font-family: 'Lato', sans-serif;
-	/* text-align: justify; */
-	/* max-width: 800px; */
 }
 
 .texto{
@@ -694,7 +692,8 @@ nav ul li ul li:hover{
 }
 
 .sca p{
-	font-size: larger;
+	/* font-size: larger; */
+	font-size: 20px;
 	padding: 20px;
 	text-align: center;
 }
